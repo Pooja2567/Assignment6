@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+    form{
+        width: 500px;
+        height: 700px;
+        background-color: pink;
+    
+    }
+    input[type=text]{
+        width: 90%;
+        height: 30px;
+        margin-bottom: 20px;
+
+    }
+    .a{
+        width: 90px;
+        margin-bottom: 20px;
+    }
+    #appl{
+        width: 90%;
+        height: 25px;
+        background-color:rgb(218, 136, 150);
+        margin-left: 24px;
+    }
+    .c{
+        text-align: center;
+    }
+     
+</style>
+<body>
+    <script>
+        function submitform(){
+            window.alert(document.getElementById("appl").innerHTML="submitted successfully");
+        }
+
+    </script>
+    <form>
+         <h1 class="c">Job Application Form</h1>
+         <label for="firstname">FIRST NAME</label>
+         <input type="text">
+         <label for="secondname">SECOND NAME</label>
+         <input type="text">
+         <label for="qualification">EDUCATIONAL QUALIFICATION</label><br><br>
+         <input  class="a" type="radio" name="educational qualification">SSC<br>
+
+         <input  class="a" type="radio" name="educational qualification">INTERMEDIATE<br>
+         <input  class="a"  type="radio" name="educational qualification">DEEGREE<br>
+         <label for="gender">GENDER</label><br><br>
+         <input class="a" type="radio" name="gender">MALE<br>
+         <input class="a" type="radio" name="gender">FEMALE<br>
+         <label for="applyfor">APPLY FOR</label><br><br>
+         <input  class="a" type="radio" name="apply for">DATA ANALYST<br>
+         <input class="a" type="radio" name="apply for">DEVELOPER<br>
+         <button id="appl" type="button" onclick="submitform()">submit</button>
+
+    </form>
+    
+</body>
+</html>
